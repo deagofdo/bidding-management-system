@@ -1,0 +1,14 @@
+applications:
+  - name: biddie
+    host: biddie
+    path: ./target/biddie-v1.0.jar
+    memory: 512M
+    services: 
+    - mysql
+    - rabbitmq
+    
+    env:
+      deployloc : cloud
+      rabbit_service_name : rabbitmq
+      delay : 10000
+  
