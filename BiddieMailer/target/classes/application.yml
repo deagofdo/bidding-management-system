@@ -1,0 +1,4 @@
+sendgrid_host: ${vcap.services.${sendgrid_service_name:sendgrid}.credentials.hostname:smtp.sendgrid.net}
+sendgrid_username: ${vcap.services.${sendgrid_service_name:sendgrid}.credentials.username:FRxSJaGTbn}
+sendgrid_password : ${vcap.services.${sendgrid_service_name:sendgrid}.credentials.password:XqAR9evDRmgj7736}
+      

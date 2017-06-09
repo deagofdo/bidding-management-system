@@ -1,0 +1,15 @@
+applications:
+  - name: biddiemailer
+    host: biddiemailer
+    path: ./target/mailer-0.0.1-SNAPSHOT.jar
+    memory: 256M
+    services: 
+    - sendgrid
+    - rabbitmq
+    
+    env:
+      deployloc : cloud
+      rabbit_service_name : rabbitmq
+      sendgrid_service_name : sendgrid
+    
+      
